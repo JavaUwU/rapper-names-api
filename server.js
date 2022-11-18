@@ -30,9 +30,9 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/:rapperName', (request, response) => {
-    const rapperName = request.params.rapperName.toLowerCase()
-    if(rappers[rapperName]){
-        response.json(rappers[rapperName])
+    const rappersName = request.params.rapperName.toLowerCase()
+    if(rappers[rappersName]){
+        response.json(rappers[rappersName])
     }else {
         response.json('N/A')
     }

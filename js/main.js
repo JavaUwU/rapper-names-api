@@ -1,3 +1,4 @@
+alert('js connected')
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
